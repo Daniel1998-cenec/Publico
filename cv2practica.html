@@ -8,29 +8,46 @@
     <link href="./clasesDAM.css" rel="stylesheet">
     <style>
         /* aqui podremos los colores */
+
         #Título {
             color:rebeccapurple;
             text-align:center;
             background-color:chocolate;
-            margin-left:35%;margin-right:35%;  /* margin:35% 35%; es lo igual */
+            margin-left:35%;margin-right:35%;  /* margin:35% 35%; es igual */
         }
+
         #experiencia {
             display:flex;
             flex-direction:row;
         }
+
         .violeta {
             width: 33%;
             margin: 10vw;
             padding: 1vw;
 
         }
-        A { width: 33%;
+
+        .A  { width: 33%;
             margin: 10vw;
             padding: 1vw;
+        }
+
+        #fijo {
+            position: sticky;
+            top:0px;
+            background-color: black;
+            color:white;
+            left:10px;
+        }
+
+        .B {
+            color:lawngreen
         }
     </style>
 </head>
 <body>
+    <h2 id="fijo"> Daniel César </h2>
     <section>
         <!--bloque superior común a todas las páginas-->
         <nav>
@@ -40,7 +57,6 @@
     <header>
         <!-- aquí va el título de la página y alguna información -->
         <h1 id="Título"> Mi curriculum vitae. </h1>
-        <h2> Daniel César </h2>
     </header>
     <main>
         <!-- aquí va lo más importante de está página-->
@@ -54,6 +70,10 @@
         <section class="A">
             <!--Aquí te comento mis datos de como contactarme-->
             <h2>Información personal</h2>
+                <p>Nombres y apellidos: <span class="B"> Daniel César Vargas Holguín</span></p>
+                <p>Fecha de nacimiento: <span class= "B"> 29/01/1998</span></p>
+                <p>Número de teléfono: <span class= "B"> 616282900</span></p>
+                <p>Correo electrónico: <span class= "B"> danielcesar1998@hotmail.com</span></p>
             <article class="violeta">
             
             </article>
