@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV con flexbox</title>
+    <link href="./clasesDAM.css" rel="stylesheet">
+    <style>
+        /* aqui podremos los colores */
+        #Título {
+            color:rebeccapurple;
+            text-align:center;
+            background-color:chocolate;
+            margin-left:35%;margin-right:35%;  /* margin:35% 35%; es lo igual */
+        }
+        #experiencia {
+            display:flex;
+            flex-direction:row;
+        }
+        .violeta {
+            width: 33%;
+            margin: 10vw;
+            padding: 1vw;
+
+        }
+        A { width: 33%;
+            margin: 10vw;
+            padding: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!--bloque superior común a todas las páginas-->
+        <nav>
+
+        </nav>
+    </section>
+    <header>
+        <!-- aquí va el título de la página y alguna información -->
+        <h1 id="Título">Mi curriculum vitae.</h1>
+        <h2>Daniel César</h2>
+    </header>
+    <main>
+        <!-- aquí va lo más importante de está página-->
+        <h3>Estudiante</h3>
+    </main>
+    <div id="experiencia">
+        <section class="A">
+            <!--Aquí te comento mis datos de como contactarme-->
+            <h2>Información personal</h2>
+            <article class="violeta">
+            
+            </article>
+        </section>
+        <section class="A">
+            <!--Un bloque informativo-->
+            <h2>Experiencia de trabajos</h2>
+            <article class="violeta"></article>
+        </section>
+        <section class="A">
+            <!--otro bloque informativo-->
+            <h2>Intereses</h2>
+            <article class="violeta">
+
+            </article>
+        </section>
+</div>
+    <footer>
+        <nav>
+            <ul>
+                <li>Mi perfil de Linkedin</li>
+                <l1>Mi página en Github</l1>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
