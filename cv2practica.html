@@ -9,7 +9,7 @@
     <style>
         /* aqui podremos los colores */
 
-        #Título {
+        #TítuloPrincipal {
             color:rebeccapurple;
             text-align:center;
             background-color:chocolate;
@@ -44,9 +44,15 @@
         .B {
             color:lawngreen
         }
+        #Titulo { color:greenyellow;
+        }
+        .C {
+            color:red;
+        }
     </style>
 </head>
 <body>
+    <!--https://css-tricks.com/snippets/css/a-guide-to-flexbox/  Para saber de como colocar las cajitas.-->
     <h2 id="fijo"> Daniel César </h2>
     <section>
         <!--bloque superior común a todas las páginas-->
@@ -56,7 +62,7 @@
     </section>
     <header>
         <!-- aquí va el título de la página y alguna información -->
-        <h1 id="Título"> Mi curriculum vitae. </h1>
+        <h1 id="TítuloPrincipal"> Mi curriculum vitae. </h1>
     </header>
     <main>
         <!-- aquí va lo más importante de está página-->
@@ -70,18 +76,31 @@
         <section class="A">
             <!--Aquí te comento mis datos de como contactarme-->
             <h2>Información personal</h2>
+            <article class="violeta">
                 <p>Nombres y apellidos: <span class="B"> Daniel César Vargas Holguín</span></p>
                 <p>Fecha de nacimiento: <span class= "B"> 29/01/1998</span></p>
                 <p>Número de teléfono: <span class= "B"> 616282900</span></p>
                 <p>Correo electrónico: <span class= "B"> danielcesar1998@hotmail.com</span></p>
-            <article class="violeta">
-            
             </article>
+        </section>
+         <section Class="A">
+            <!--Boque de Formación académica-->
+            <h2 id="Titulo">Formación académica</h2>
+                <article>
+                    <p>-Termine Bachillerato de Ciencias sociales.<br/> 
+                        (I.E.S Almenara; Velez-Málaga)</p>
+                    <p>-Realice tres años la carrera de Trabajo social. </p>
+                </article>
         </section>
         <section class="A">
             <!--Un bloque informativo-->
-            <h2>Experiencia de trabajos</h2>
-            <article class="violeta"></article>
+            <h2 id="Titulo">Experiencia laboral</h2>
+            <p>- (2020) <span class="C"> Trop</span>. Envasador</p>
+            <p>- (2019-2020) <span Class="C">Telepizza</span>. Repartidor</p>
+            <p>- (2020-2022) <span Class="C">Burgue King</span>. Repartidor/Encargado</p>
+            <article class="violeta">
+
+            </article>
         </section>
         <section class="A">
             <!--otro bloque informativo-->
