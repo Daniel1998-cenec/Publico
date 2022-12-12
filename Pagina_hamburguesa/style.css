@@ -16,7 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #171717;
+    background: #000000;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -38,7 +38,7 @@ body {
 }
 
 .panel a:hover {
-    background: #3f3f3f;
+    background: #000000;
 }
 
 .header {
@@ -49,9 +49,10 @@ body {
 }
 
 .header {
-    height: 60vh !important;
-    background: url(img/header.jpg) no-repeat center;
+    height: 100vh !important;
+    background: url(img/Fondo.png) no-repeat center;
     background-size: cover;
+    background-color: #000000;
 }
 
 .titulo {
@@ -73,25 +74,11 @@ p {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 40px;
-    border: 2px solid #9c27b0;
+    border: 2px solid #d40621;
     color: #fff;
     text-decoration: none;
-    background: #9c27b0;
+    background: #a40116;
 }
-
-.btn:hover {
-    background: none;   
-}
-
-.btn-home {
-    display: flex;
-}
-
-.btn-home a {
-    margin: 0 10px;
-}
-
-
 .content {
     height: 50vh;
     display: flex;
@@ -100,9 +87,9 @@ p {
     align-items: center;
 }
 
-.sau {
+.carta {
     padding: 30px;
-    background: #1f1d1d
+    background: #000000
 }
 
 .contenedor {
@@ -116,29 +103,16 @@ p {
 .contenedor .caja {
     height: 11rem;
     width: 17rem;
-    background: #101010;
+    background: #383737;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
     margin: 2rem;   
 }
 
-.contenedor .caja i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #9c27b0;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
 .contenedor .caja h3 {
     font-size: 20px;
-    color: #9c27b0;
+    color: #ff0000;
 
 }
 
@@ -148,32 +122,80 @@ p {
 }
 
 .about {
-    background: #171717;
+    background: #000000;
 }
 
 .price {
-    background: url(img/costos.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    background:#000000
 }
 
 
 .contact {
     padding-top: 20px;
-    background: #171717;
+    background: #000000;
     padding-bottom: 0;
 }
 
+/* Pseudo-Clases */ 
+
+
+
+.btn:active{
+    color: green;
+}
+.titulo:hover{
+    color:red;
+    text-decoration: line-through;
+}
+/* Pseudo-Elementos */
+
+
+.btn::first-letter{
+    border:1.5px solid rgb(0, 72, 255);
+    background: rgb(0, 0, 0);
+}
+
+#hamburguesa::after{
+    content: "🍔";
+}
+#hamburguesa::before{
+    content: "🍔";
+}
+#pizza::after{
+    content: "🍕";
+}
+#pizza:before{
+    content: "🍕";
+}
+#bebida::after {
+    content: "🧃";
+}
+#bebida::before {
+    content: "🧃";
+}
+@media screen and (max-width:1000px){
+    .header, .head, .carta, .about, .price, .contact {
+        background-color:rgb(61, 39, 12) 
+    }
+}
+
+@media screen and (max-width:700px){
+    .header, .head, .carta, .about, .price, .contact {
+        background-color:rgb(6, 0, 29);
+}
+}
 
 @media (max-width: 768px) {
 
-    .title {
+    .titulo {
         margin-bottom: 0;
         font-size: 40px;
     }
 
-    .sau {
+    .carta {
         height: 100vh;
     }
 
