@@ -197,5 +197,20 @@ p {
 
     .carta {
         height: 100vh;
-    }  
+    } 
+    
+
+@media screen and (orientation:portrait) {
+
+    .portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
 }
