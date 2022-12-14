@@ -179,6 +179,7 @@ p {
 @media screen and (max-width:1000px){
     .header, .head, .carta, .about, .price, .contact {
         background-color:rgb(61, 39, 12) 
+        display
     }
 }
 
