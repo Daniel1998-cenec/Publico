@@ -13,11 +13,12 @@
 				<br/>
 				
 				<xsl:for-each select="cancion/letra/estrofa">
-					<xsl:for-each="verso">
+					<xsl:sort select="orden"/>
+					<xsl:for-each select="verso">
 						<p><xsl:value-of select="."/></p>
 					</xsl:for-each>
 					<br/>
-				</xsl:for-each>	
+				</xsl:for-each>
 				
 				<p>Autor<xsl:value-of select="cancion/titulo"/></p>
 				
