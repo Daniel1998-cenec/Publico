@@ -9,8 +9,17 @@
 				<h2>Canción:</h2>
 				<h1>Titulo<xsl:value-of select="cancion/titulo"/></h1>
 				<h1>cancion/titulo<xsl:value-of select="cancion/titulo"/></h1>
-				<h1>/cancion/titulo<xsl:value-of select="cancion/titulo"/></h1>
+				<p>Autor<xsl:value-of select="cancion/titulo"/></p>
+				<br/>
+				
+				<xsl:for-each select="cancion/letra/estrofa">
+					<xsl:for-each="verso">
+						<p><xsl:value-of select="."/></p>
+					</xsl:for-each>
+					<br/>
+				</xsl:for-each>	
 			</body>
-		</html>	
+		</html>
+		
 	</xsl:template>
 </xsl:stylesheet>
