@@ -4,29 +4,33 @@
 	<titulo>Cuerpo de Mujer</titulo>
 	<autor>Pablo Neruda</autor>
 	<letra>
-		<estrofa tipo="estribillo">
+		<estrofa>
 			<orden>4</orden>
+			<tipo>estribillo</tipo>
 			<verso>Cuerpo de mujer, blancas colinas, muslos blancos,</verso>
 			<verso>te pareces al mundo en tu actitud de entrega.</verso>
 			<verso>Mi cuerpo de labriego salvaje te socava</verso>
 			<verso>y hace saltar el hijo del fondo de la tierra</verso>			
 		</estrofa>
-		<estrofa tipo="normal">
+		<estrofa>
 			<orden>3</orden>
+			<tipo>normal</tipo>
 			<verso>Fui solo como un túnel. De mí huían los pájaros</verso>
 			<verso>y en mí la noche entraba su invasión poderosa.</verso>
 			<verso>Para sobrevivirme te forjé como un arma,</verso>
 			<verso>como una flecha en mi arco, como una piedra en mi honda.</verso>			
 		</estrofa>
-		<estrofa tipo="normal">
+		<estrofa>
 			<orden>2</orden>
+			<tipo>normal</tipo>
 			<verso>Pero cae la hora de la venganza, y te amo.</verso>
 			<verso>Cuerpo de piel, de musgo, de leche ávida y firme.</verso>
 			<verso>Ah los vasos del pecho! Ah los ojos de ausencia!</verso>
 			<verso>Ah las rosas del pubis! Ah tu voz lenta y triste!</verso>			
 		</estrofa>
-		<estrofa tipo="estribillo">
+		<estrofa>
 			<orden>1</orden>
+			<tipo>estribillo</tipo>
 			<verso>Cuerpo de mujer mía, persistirá en tu gracia.</verso>
 			<verso>Mi sed, mi ansia sin límite, mi camino indeciso!</verso>
 			<verso>Oscuros cauces donde la sed eterna sigue,</verso>

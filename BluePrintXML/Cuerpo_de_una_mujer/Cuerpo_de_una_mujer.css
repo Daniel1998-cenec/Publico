@@ -1,3 +1,13 @@
-.estribillo {
-    background-color: #00d0ff;
+h2 {
+   color: blue;
+}
+
+p {
+   color: blue;
+}
+
+span {
+   color: yellow;
+   background-color: blue;
+   font-weight: bold;
 }

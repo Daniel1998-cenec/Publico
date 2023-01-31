@@ -8,8 +8,12 @@
 				<h1>Titulo: Cuerpo de una mujer<xsl:value-of select="titulo"/></h1>
 				<br/>
 				<xsl:for-each select="cancion/letra/estrofa">
+					
 					<xsl:sort select="orden"/>
-					<xsl:for-each select="verso">
+						<xsl:if test="tipo='estribillo'">
+							Estribillo:
+						</xsl:if>
+						<xsl:for-each select="verso">
 						<p><xsl:value-of select="."/></p>
 					</xsl:for-each>
 					<br/>
