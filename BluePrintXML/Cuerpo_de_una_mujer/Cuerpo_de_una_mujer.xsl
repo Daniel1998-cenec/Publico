@@ -13,6 +13,9 @@
 						<xsl:if test="tipo='estribillo'">
 							Estribillo:
 						</xsl:if>
+						<xsl:if test="tipo='normal'">
+							Normal:
+						</xsl:if>
 						<xsl:for-each select="verso">
 						<p><xsl:value-of select="."/></p>
 					</xsl:for-each>
