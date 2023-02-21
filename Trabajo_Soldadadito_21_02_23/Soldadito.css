@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div::first-letter { /* pseudoelemento */
+    font-size:x-large;
+    font-weight:lighter;
+    font-style:initial;
+}
+
+
+
+div:nth-child(odd) { /* pseudoclase */
+    background-color: rgba(1, 225, 255, 0.568);
+}
+div:nth-child(even) {
+    background-color: rgb(204, 255, 0);
+}
+
+p:last-of-type::after { /* pseudoclase y pseudoelemento */
+    content: "...";
+}
+
+p:only-child::after { /* evita que lleven puntos suspensivos los párrafos aislados */
+    content:none;
+}
+
+p {
+    line-height: 12px;
+}
+
+div {
+    line-height: 36px;
+}
+
+#oferta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#oferta p {
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ver {
+    display: block;
+}
+
+#ocultar {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:focus {
+    color: #000;
+    text-decoration:none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
